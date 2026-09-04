@@ -13,7 +13,7 @@ Figma: https://www.figma.com/design/YSHGKtN5oZDft5ds96ZKYH
 | Mobile homepage 58:91 | assets/site.css media queries |
 | Header 1:108 | header, .site-nav |
 | Hero 1:110 | .hero |
-| Service cards 1:112 | #auto-repair, #inspection-emissions |
+| Service cards 1:112 | #auto-repair, #inspection-emissions, #used-cars |
 | Emissions callout 1:114 | #free-diagnostics |
 | Why Capri 1:116 | .why |
 | Service area 1:120 | .area |
@@ -60,3 +60,11 @@ The repository has no form backend, notification recipient or booking service. C
 Phone, address and hours match the existing repository and Figma; they were not reconfirmed directly with the business during this deployment. Figma sample reviews were not treated as verified testimonials.
 
 Native developer-resource APIs were unavailable in the connector. References were saved in the descriptions of seven existing Figma components instead. Desktop and mobile hero headlines/supporting copy were updated. Other Figma sections retain their prior layout and draft content; follow the editorial rules above when implementing them.
+
+## v6 visual correction — September 4, 2026
+
+Re-read desktop 1:107 and mobile 58:91 (mobile contents now 84:19 onward) before implementing. The previous adapted layout was replaced with the Figma single-row desktop navigation, mobile hamburger, cropped hero, three service cards, inline benefit icons, both exported maps, expanded FAQ rows, location map on the left, and responsive CTA/footer. Inter fonts and optimized images are self-hosted. assets/site.js controls the accessible mobile menu.
+
+Intentional differences: omit unverified sample reviews and payment claims; use call/visit destinations because the additional page frames are empty and no form backend exists; keep three service cards on mobile because mobile services frame 84:34 is empty. FAQ answers clarify the diagnostic offer and no online inventory. These differences change total page height.
+
+Before every release compare fresh desktop AND mobile Figma screenshots with the rendered page. A version-marker change alone does not bring Figma changes into production. Update the HTML, CSS and assets first, then verify the actual published files against the release.
