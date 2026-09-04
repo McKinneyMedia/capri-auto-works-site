@@ -47,7 +47,7 @@ The apex domain redirects to www. Keep the existing DNS and hosting configuratio
 
 Automatic: the existing GitHub integration triggers Vercel deployments. Shared CSS tokens apply consistently across the page.
 
-Manual: selecting approved Figma changes, implementing HTML/CSS, exporting assets, reviewing previews, merging and verifying production. Developer-resource links and this map help navigation; they do not synchronize designs and code automatically.
+Manual: selecting approved Figma changes, implementing HTML/CSS, exporting assets, reviewing previews, merging and verifying production. Component descriptions with GitHub references and this map help navigation; they do not synchronize designs and code automatically.
 
 Code Connect was not configured. The observed Figma plan is Professional; the Code Connect skill requires Organization or Enterprise. This workflow does not require a plan upgrade.
 
@@ -58,3 +58,5 @@ As inspected September 4, 2026 UTC, only the desktop and mobile homepage frames 
 The repository has no form backend, notification recipient or booking service. Contact uses telephone, directions and visits. A future form needs a confirmed destination and delivery verification. Do not deploy a decorative form or report test delivery without evidence.
 
 Phone, address and hours match the existing repository and Figma; they were not reconfirmed directly with the business during this deployment. Figma sample reviews were not treated as verified testimonials.
+
+Native developer-resource APIs were unavailable in the connector. References were saved in the descriptions of seven existing Figma components instead. Desktop and mobile hero headlines/supporting copy were updated. Other Figma sections retain their prior layout and draft content; follow the editorial rules above when implementing them.
