@@ -68,3 +68,11 @@ Re-read desktop 1:107 and mobile 58:91 (mobile contents now 84:19 onward) before
 Intentional differences: omit unverified sample reviews and payment claims; use call/visit destinations because the additional page frames are empty and no form backend exists; keep three service cards on mobile because mobile services frame 84:34 is empty. FAQ answers clarify the diagnostic offer and no online inventory. These differences change total page height.
 
 Before every release compare fresh desktop AND mobile Figma screenshots with the rendered page. A version-marker change alone does not bring Figma changes into production. Update the HTML, CSS and assets first, then verify the actual published files against the release.
+
+## v7 source refresh
+
+Fresh design context now includes desktop header logo I1:134;91:85 at 109×62, footer logo 91:93 at 109×62, mobile footer logo 84:149 at full width ×126, and bordered mobile action bar 84:155. These updates and exported mobile menu/FAQ icons are implemented in v7.
+
+Desktop contact form 87:69 was newly added in Figma. It has first/last name, email, phone, optional vehicle year/make/model, and message fields. The email shown in the input is not proof of the delivery recipient. Form publication remains pending a confirmed recipient and configured delivery service; do not show a false success state or a nonfunctional Send button.
+
+Recipient confirmed: capriautoworks@gmail.com. The responsive contact form is prepared locally, but publication is pending explicit approval of FormSubmit as the processor, inbox activation, and delivery verification. v7 publishes only the Figma visual changes.
