@@ -563,7 +563,7 @@ footer{background:#111318}
 .footer-logo { display:block; width:109px; height:62px; object-fit:contain; margin-bottom:12px; }
 .faq-icon { display:none; }
 @media(max-width:900px) {
- .logo img { width:154px; height:39px; }
+ .logo img { width:190px; height:48.117px; object-fit:cover; }
  .site-header { border-bottom:1px solid #626873; }
  .menu-toggle img { width:20px; height:20px; }
  .mobile-actions { border:2px solid #000; background:#1558e8; }

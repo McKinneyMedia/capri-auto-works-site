@@ -80,3 +80,7 @@ Recipient confirmed: capriautoworks@gmail.com. The responsive contact form is pr
 ## v8 contact form launch
 
 The user explicitly approved FormSubmit as the processor for names, email addresses, phone numbers, optional vehicle details and messages, forwarding to capriautoworks@gmail.com. The prepared form is published in v8 with required/email validation and provider CAPTCHA enabled. Confirm inbox activation and test-message receipt before calling email delivery verified. FormSubmit owns the submission confirmation page; no false local success screen is used.
+
+## v9 fresh deployment
+
+Re-read Figma desktop 1:107 and mobile 58:91. Desktop design context was unchanged; mobile header logo 84:21 changed to 190×48.117. Applied the new mobile dimensions and current exported mobile image. Retained the approved FormSubmit form and existing editorial exceptions. Version 2026-09-04-v9 triggers a fresh GitHub-to-Vercel production deployment.
