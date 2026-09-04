@@ -76,3 +76,7 @@ Fresh design context now includes desktop header logo I1:134;91:85 at 109×62, f
 Desktop contact form 87:69 was newly added in Figma. It has first/last name, email, phone, optional vehicle year/make/model, and message fields. The email shown in the input is not proof of the delivery recipient. Form publication remains pending a confirmed recipient and configured delivery service; do not show a false success state or a nonfunctional Send button.
 
 Recipient confirmed: capriautoworks@gmail.com. The responsive contact form is prepared locally, but publication is pending explicit approval of FormSubmit as the processor, inbox activation, and delivery verification. v7 publishes only the Figma visual changes.
+
+## v8 contact form launch
+
+The user explicitly approved FormSubmit as the processor for names, email addresses, phone numbers, optional vehicle details and messages, forwarding to capriautoworks@gmail.com. The prepared form is published in v8 with required/email validation and provider CAPTCHA enabled. Confirm inbox activation and test-message receipt before calling email delivery verified. FormSubmit owns the submission confirmation page; no false local success screen is used.
