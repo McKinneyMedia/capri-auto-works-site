@@ -1,0 +1,218 @@
+<<!DOCTYPE html>
+  <html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Capri Auto Works | Auto Repair, PA Inspection & Used Cars in Allentown, PA</title>
+  <meta name="description" content="Capri Auto Works provides used vehicle sales, auto repair, and PA state safety and emissions inspections in Allentown, PA. No appointment necessary — first come, first served.">
+  </head>
+  <body>
+  <style>
+  :root{--black:#0A0A0C;--blue:#1656D9;--blue-dark:#0E3FA6;--blue-tint:#E7EFFD;--gray-900:#15171B;--gray-600:#4B4F58;--gray-400:#8A8F99;--gray-100:#F0F1F3;--white:#FFFFFF;}
+  *{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Roboto, Helvetica, Arial, sans-serif;background:var(--white);color:var(--gray-900);line-height:1.5;}
+a{color:inherit;text-decoration:none;}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px;}
+header{display:flex;align-items:center;justify-content:space-between;padding:18px 0;border-bottom:1px solid #e6e7ea;flex-wrap:wrap;gap:12px;}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:18px;letter-spacing:0.2px;}
+.logo .mark{width:34px;height:34px;background:var(--blue);border-radius:6px;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;}
+.header-right{display:flex;align-items:center;gap:18px;}
+.header-phone{font-weight:700;font-size:15px;color:var(--gray-900);}
+.header-phone span{color:var(--gray-600);font-weight:500;font-size:13px;display:block;}
+.call-btn{background:var(--blue);color:#fff;padding:11px 20px;border-radius:4px;font-weight:600;font-size:14px;letter-spacing:0.3px;}
+.hero{background:var(--black);color:#fff;padding:96px 0 88px;}
+.badge{display:inline-block;background:rgba(255,255,255,0.1);color:#a9c3ff;border:1px solid rgba(255,255,255,0.2);padding:7px 14px;border-radius:100px;font-size:12px;font-weight:700;letter-spacing:1.4px;margin-bottom:22px;}
+.hero h1{font-size:48px;font-weight:800;line-height:1.1;letter-spacing:-0.5px;max-width:760px;margin-bottom:22px;}
+.hero p{font-size:18px;color:#a7abb3;max-width:620px;margin-bottom:32px;}
+.btn-row{display:flex;gap:14px;flex-wrap:wrap;}
+.btn-primary{background:var(--blue);color:#fff;padding:15px 28px;border-radius:4px;font-weight:600;font-size:15px;}
+.btn-outline{border:1.5px solid #fff;color:#fff;padding:14px 28px;border-radius:4px;font-weight:600;font-size:15px;}
+.services{padding:80px 0;}
+.eyebrow{color:var(--blue);font-weight:700;font-size:12px;letter-spacing:1.4px;text-align:center;display:block;margin-bottom:10px;}
+h2{font-size:32px;font-weight:800;text-align:center;margin-bottom:44px;letter-spacing:-0.3px;}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+.card{border:1px solid #DADDE3;border-radius:8px;padding:32px;}
+.chip{width:48px;height:48px;background:var(--blue-tint);border-radius:8px;margin-bottom:18px;}
+.card h3{font-size:20px;font-weight:800;margin-bottom:10px;}
+.card p{color:var(--gray-600);font-size:15px;}
+.emissions{background:var(--blue);color:#fff;padding:56px 0;}
+.emissions .wrap{display:flex;justify-content:space-between;align-items:center;gap:32px;flex-wrap:wrap;}
+.emissions .tag{font-weight:600;font-size:14px;color:#cddcff;margin-bottom:8px;}
+.emissions h3{font-size:28px;font-weight:800;margin-bottom:10px;max-width:600px;}
+.emissions p{color:#cddcff;font-size:15px;max-width:560px;}
+.emissions .btn-outline{border-color:#fff;color:#fff;white-space:nowrap;}
+  .why{background:var(--gray-100);padding:80px 0;}
+.why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:28px;}
+.why-item h4{font-size:16px;font-weight:800;margin:14px 0 8px;}
+.why-item p{font-size:14px;color:var(--gray-600);}
+.why-dot{width:40px;height:40px;background:var(--black);border-radius:8px;}
+.area{padding:72px 0;text-align:center;}
+.area p{color:var(--gray-600);max-width:640px;margin:0 auto 28px;font-size:16px;}
+.towns{display:flex;justify-content:center;flex-wrap:wrap;gap:10px;}
+.town-chip{background:var(--gray-100);padding:9px 18px;border-radius:100px;font-weight:600;font-size:14px;}
+.visit{padding:0 0 80px;}
+.visit-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:56px;align-items:start;}
+.visit-info h2{text-align:left;margin-bottom:24px;}
+.info-row{margin-bottom:22px;}
+  .info-label{color:var(--blue);font-weight:700;font-size:12px;letter-spacing:1px;margin-bottom:4px;}
+.info-value{font-size:17px;color:var(--gray-900);line-height:1.6;}
+.hours-table{width:100%;border-collapse:collapse;margin-top:4px;}
+.hours-table td{padding:3px 0;font-size:15px;color:var(--gray-900);}
+.hours-table td.day{color:var(--gray-600);width:120px;}
+.visit-btns{margin-top:28px;}
+  .map-frame{width:100%;height:380px;border:0;border-radius:8px;filter:grayscale(15%);}
+.cta{background:var(--black);color:#fff;padding:80px 0;text-align:center;}
+.cta h2{color:#fff;max-width:700px;margin:0 auto 28px;}
+  .cta .btn-row{justify-content:center;}
+  footer{padding:56px 0 32px;border-top:1px solid #e6e7ea;color:var(--gray-600);font-size:14px;}
+.footer-top{display:flex;justify-content:space-between;gap:40px;flex-wrap:wrap;margin-bottom:36px;}
+.footer-brand{max-width:340px;}
+  .footer-brand .fname{font-weight:800;font-size:17px;color:var(--gray-900);margin-bottom:10px;}
+.footer-brand p{font-size:14px;line-height:1.6;margin-bottom:14px;}
+.footer-brand a{font-weight:700;color:var(--blue);}
+.footer-col h5{font-size:12px;font-weight:700;letter-spacing:1px;color:var(--gray-900);margin-bottom:12px;}
+.footer-col div, .footer-col a{display:block;font-size:14px;margin-bottom:8px;}
+.footer-col a{font-weight:600;color:var(--blue);}
+.footer-bottom{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;padding-top:20px;border-top:1px solid #e6e7ea;font-size:13px;}
+@media (max-width:820px){.cards, .why-grid{grid-template-columns:1fr 1fr;} .visit-grid{grid-template-columns:1fr;} .hero h1{font-size:34px;}}
+  @media (max-width:560px){.cards, .why-grid{grid-template-columns:1fr;} header .call-btn{font-size:13px;padding:10px 14px;} .header-right{width:100%;justify-content:space-between;}}
+</style>
+  <header class="wrap">
+  <div class="logo"><span class="mark">C</span> CAPRI AUTO WORKS</div>
+  <div class="header-right">
+  <a href="tel:+14849037452" class="header-phone">(484) 903-7452<span>Mon-Fri 9-6 / Sat 9-5</span></a>
+  <a href="tel:+14849037452" class="call-btn">CALL NOW</a>
+  </div>
+  </header>
+  <section class="hero">
+  <div class="wrap">
+  <span class="badge">WALK-INS WELCOME</span>
+  <h1>Used Cars, Auto Repair & PA Inspections in Allentown, PA</h1>
+<p>Capri Auto Works provides used vehicle sales, professional auto repair, diagnostics, and PA state safety and emissions inspections for drivers throughout Allentown and the Lehigh Valley. No appointment necessary - we work first come, first served.</p>
+  <div class="btn-row">
+  <a href="tel:+14849037452" class="btn-primary">Get Service Today</a>
+  <a href="#visit" class="btn-outline">Prefer to talk first? Call us</a>
+  </div>
+  </div>
+  </section>
+  <section class="services" id="services">
+  <div class="wrap">
+  <span class="eyebrow">WHAT WE DO</span>
+  <h2>Buy a Car. Fix Your Car. Inspect Your Car.</h2>
+  <div class="cards">
+  <div class="card"><div class="chip"></div><h3>Auto Repair</h3><p>Diagnostics, maintenance and mechanical repair, walk in any time, no appointment needed.</p></div>
+<div class="card"><div class="chip"></div><h3>PA Inspection & Emissions</h3><p>State safety inspections, emissions testing and emissions-related diagnostics.</p></div>
+  <div class="card"><div class="chip"></div><h3>Used Cars</h3><p>Shop available pre-owned vehicles, inspected and ready to drive. Stop by the lot to see what's currently on hand.</p></div>
+  </div>
+  </div>
+  </section>
+  <section class="emissions">
+  <div class="wrap">
+  <div>
+  <div class="tag">Failed Emissions? Check Engine Light On?</div>
+  <h3>Ask About Our Free Emissions Diagnostic</h3>
+<p>Our free diagnostic identifies what's triggering your check engine light or emissions failure, before you pay for repairs. (This is a diagnostic on your vehicle, not the state emissions inspection itself.)</p>
+  </div>
+  <a href="tel:+14849037452" class="btn-outline">Ask About Free Diagnostic</a>
+  </div>
+  </section>
+  <section class="why">
+  <div class="wrap">
+  <span class="eyebrow">WHY CHOOSE CAPRI AUTO WORKS</span>
+  <h2>Built Around Getting You Back on the Road</h2>
+  <div class="why-grid">
+  <div class="why-item"><div class="why-dot"></div><h4>No Appointment Necessary</h4><p>First come, first served. Walk in for repair, inspection or emissions work.</p></div>
+  <div class="why-item"><div class="why-dot"></div><h4>PA-Certified Inspections</h4><p>Full state safety inspections and emissions testing done right.</p></div>
+<div class="why-item"><div class="why-dot"></div><h4>Free Emissions Diagnostics</h4><p>Know what's wrong before you pay for a fix.</p></div>
+  <div class="why-item"><div class="why-dot"></div><h4>Locally Owned in Allentown</h4><p>Serving Allentown and the Lehigh Valley for years.</p></div>
+  </div>
+  </div>
+  </section>
+  <section class="area">
+  <div class="wrap">
+  <span class="eyebrow">SERVICE AREA</span>
+  <h2>Proudly Serving the Lehigh Valley</h2>
+<p>Drivers from across the Lehigh Valley walk in for repair, inspection, emissions and used-car needs, no appointment required.</p>
+<div class="towns">
+<span class="town-chip">Allentown</span>
+<span class="town-chip">Bethlehem</span>
+  <span class="town-chip">Easton</span>
+  <span class="town-chip">Whitehall</span>
+  <span class="town-chip">Emmaus</span>
+  <span class="town-chip">Catasauqua</span>
+  </div>
+  </div>
+  </section>
+  <section class="visit" id="visit">
+  <div class="wrap visit-grid">
+  <div class="visit-info">
+  <h2>Visit the Shop</h2>
+<div class="info-row">
+<div class="info-label">ADDRESS</div>
+<div class="info-value">2005 Hanover Ave, Allentown, PA 18109</div>
+  </div>
+  <div class="info-row">
+  <div class="info-label">PHONE</div>
+  <div class="info-value"><a href="tel:+14849037452">(484) 903-7452</a></div>
+  </div>
+  <div class="info-row">
+  <div class="info-label">SHOP HOURS</div>
+  <table class="hours-table">
+  <tr><td class="day">Monday - Friday</td><td>9:00 AM - 6:00 PM</td></tr>
+  <tr><td class="day">Saturday</td><td>9:00 AM - 5:00 PM</td></tr>
+  <tr><td class="day">Sunday</td><td>Closed</td></tr>
+  </table>
+  </div>
+  <div class="btn-row visit-btns">
+  <a href="https://www.google.com/maps/dir/?api=1&destination=2005+Hanover+Ave%2C+Allentown%2C+PA+18109" target="_blank" rel="noopener" class="btn-primary" style="background:var(--black);">Get Directions</a>
+  <a href="tel:+14849037452" class="btn-outline" style="border-color:var(--black);color:var(--black);">Call Capri Auto Works</a>
+  </div>
+  </div>
+  <iframe class="map-frame" loading="lazy" src="https://www.google.com/maps?q=2005+Hanover+Ave,+Allentown,+PA+18109&output=embed" allowfullscreen></iframe>
+  </div>
+  </section>
+  <section class="cta">
+  <div class="wrap">
+  <span class="eyebrow">STOP IN TODAY</span>
+  <h2>No Appointment. Just Drive In.</h2>
+<div class="btn-row">
+<a href="tel:+14849037452" class="btn-primary">Get Service Today</a>
+  <a href="tel:+14849037452" class="btn-outline">Call Capri Auto Works</a>
+  </div>
+  </div>
+  </section>
+  <footer class="wrap">
+  <div class="footer-top">
+  <div class="footer-brand">
+  <div class="fname">CAPRI AUTO WORKS</div>
+  <p>At Capri Auto Works, located in Allentown, PA, we take pride in the way we do business. We focus on our customers and believe your automotive experience should be easy and hassle-free. Walk-ins welcome, no appointment necessary.</p>
+<a href="https://www.facebook.com/capriautoworks/" target="_blank" rel="noopener">Find us on Facebook</a>
+  </div>
+  <div class="footer-col">
+  <h5>SERVICES</h5>
+  <div>Auto Repair</div>
+  <div>PA Inspection & Emissions</div>
+  <div>Free Emissions Diagnostic</div>
+<div>Used Cars</div>
+</div>
+<div class="footer-col">
+<h5>VISIT US</h5>
+  <div>2005 Hanover Ave<br>Allentown, PA 18109</div>
+  <a href="tel:+14849037452">(484) 903-7452</a>
+  <a href="https://www.google.com/maps/dir/?api=1&destination=2005+Hanover+Ave%2C+Allentown%2C+PA+18109" target="_blank" rel="noopener">Get Directions</a>
+  </div>
+  <div class="footer-col">
+  <h5>SHOP HOURS</h5>
+  <div>Mon - Fri: 9 AM - 6 PM</div>
+  <div>Saturday: 9 AM - 5 PM</div>
+  <div>Sunday: Closed</div>
+  </div>
+  </div>
+  <div class="footer-bottom">
+  <span>Capri Auto Works. All rights reserved.</span>
+  <span>Allentown, PA / Serving the Lehigh Valley</span>
+  </div>
+  </footer>
+  </body>
+  </html>
+  
