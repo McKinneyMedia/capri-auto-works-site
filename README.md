@@ -7,7 +7,9 @@ One static page hosted by Vercel project `capri-auto-works`, deployed from GitHu
 - `index.html`: all content, inline CSS and inline JS
 - `assets/capri-logo.webp`, `assets/capri-logo.png`: logo (WebP for the page, PNG for the favicon)
 - `assets/fonts/`: self-hosted Archivo and Big Shoulders (SIL OFL 1.1)
-- `robots.txt`, `sitemap.xml`: search crawler entry points
+- `assets/og-image.jpg`: 1200×630 social share image
+- `favicon.ico`, `apple-touch-icon.png`, `assets/icons/`, `site.webmanifest`: browser and home-screen icons (cropped from the logo's "C")
+- `robots.txt`, `sitemap.xml`, `llms.txt`: search and AI-answer crawler entry points
 
 Preview locally with `python3 -m http.server 4173`.
 
