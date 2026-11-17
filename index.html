@@ -6,7 +6,7 @@
 <title>Capri Auto Works | Auto Repair, PA Inspection &amp; Used Cars in Allentown, PA</title>
 <meta name="description" content="Walk-in auto repair, PA state inspections, emissions testing and used cars at 2005 Hanover Ave, Allentown, PA. No appointment needed. Call (484) 903-7452.">
 <link rel="canonical" href="https://www.capriautoworks.online/">
-<meta name="build-version" content="2026-11-17-v10.1">
+<meta name="build-version" content="2026-11-17-v10.2">
 <meta name="theme-color" content="#121519">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Capri Auto Works, Allentown PA">
@@ -232,7 +232,13 @@ form.msg{display:grid;grid-template-columns:1fr 1fr;gap:14px}
 form.msg .full{grid-column:1/-1}
 form.msg label{display:grid;gap:6px;font-size:14px;font-weight:600;color:var(--steel)}
 textarea{min-height:130px;resize:vertical}
-.form-note{font-size:14px;color:var(--steel)}
+.who{border:0;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:10px}
+.who legend{width:100%;padding:0;margin-bottom:8px;font-size:14px;font-weight:600;color:var(--steel)}
+form.msg .who label{display:block;position:relative;border:1.5px solid var(--line);border-radius:14px;padding:12px 18px;font:600 16px/1.2 var(--body);color:var(--paper);cursor:pointer;transition:border-color .2s, background .2s}
+.who label:hover{border-color:#566072}
+.who input{position:absolute;opacity:0;inset:0;margin:0;cursor:pointer}
+form.msg .who label:has(input:checked){background:var(--paper);color:var(--asphalt);border-color:var(--paper)}
+.who label:has(input:focus-visible){outline:3px solid var(--capri);outline-offset:3px}
 @media (max-width:860px){.contact-grid{grid-template-columns:1fr}}
 @media (max-width:520px){form.msg{grid-template-columns:1fr}}
 
@@ -471,9 +477,14 @@ footer{padding:64px 0 120px;border-top:1px solid var(--line);color:var(--steel);
       <p class="muted" style="margin-top:18px">Ask a question before you come in. A message doesn't reserve a spot, so for anything urgent, call (484) 903-7452.</p>
     </div>
     <form class="msg" action="https://formsubmit.co/capriautoworks@gmail.com" method="POST">
-      <input type="hidden" name="_subject" value="Capri website: new customer message">
+      <input type="hidden" name="_subject" value="Capri website: new message">
       <input type="hidden" name="_template" value="table">
       <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+      <fieldset class="who full"><legend>Have you been to Capri before?</legend>
+        <label><input type="radio" name="customer_type" value="New customer" required>New customer</label>
+        <label><input type="radio" name="customer_type" value="Current customer">Current customer</label>
+        <label><input type="radio" name="customer_type" value="Past customer">Past customer</label>
+      </fieldset>
       <label>First name<input name="first_name" autocomplete="given-name" required></label>
       <label>Last name<input name="last_name" autocomplete="family-name" required></label>
       <label>Phone<input name="phone" type="tel" autocomplete="tel" required></label>
@@ -482,7 +493,6 @@ footer{padding:64px 0 120px;border-top:1px solid var(--line);color:var(--steel);
       <label class="full">What's going on?<textarea name="message" required></textarea></label>
       <div class="full" style="display:flex;gap:12px;align-items:center;flex-wrap:wrap">
         <button class="btn btn-primary" type="submit">Send message</button>
-        <span class="form-note">Sent to the shop by FormSubmit.</span>
       </div>
     </form>
   </div>
