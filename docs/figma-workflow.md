@@ -84,3 +84,25 @@ The user explicitly approved FormSubmit as the processor for names, email addres
 ## v9 fresh deployment
 
 Re-read Figma desktop 1:107 and mobile 58:91. Desktop design context was unchanged; mobile header logo 84:21 changed to 190×48.117. Applied the new mobile dimensions and current exported mobile image. Retained the approved FormSubmit form and existing editorial exceptions. Version 2026-09-04-v9 triggers a fresh GitHub-to-Vercel production deployment.
+
+## v10 redesign — November 17, 2026
+
+Production was replaced with a new single-page design that was built directly in code, not from Figma. The Figma frame map above describes v9 and no longer matches production. Update Figma from the live site before using the Figma-first process again.
+
+What changed:
+
+- One `index.html` with inline CSS and JS. `assets/site.css`, `assets/tokens.css`, `assets/site.js`, the Inter fonts, icons and exported images were removed. They remain in Git history.
+- Hero with a garage-door reveal and a live open/closed status computed in America/New_York.
+- "What's going on?" triage chips, a decoder for 8 dashboard warning lights, and a PA inspection sticker checker. The checker assumes a 3-month early-inspection window; confirm against PennDOT guidance.
+- The Google Map loads only after a click. Fonts are self-hosted woff2 files, and the logo is WebP. JSON-LD `AutoRepair` data is included.
+- The FormSubmit form keeps the approved recipient (capriautoworks@gmail.com) and adds a honeypot field.
+
+Editorial checks for this release:
+
+- Phone, address and hours match v9.
+- The free emissions diagnostic is stated as separate from the PA emissions inspection.
+- Used cars point to calling or visiting the lot, with no online inventory.
+- The review quotes and the "92% recommend (35 reviews)" figure are real public reviews from Capri's Facebook page and Google Business Profile (checked November 16, 2026). They are not Figma samples.
+- The review figure will drift over time, so recheck it periodically.
+
+Before this release, Lighthouse on a temporary deploy scored 100 in all four categories on desktop, and on mobile scored 99 for Performance and 100 for the other three.
