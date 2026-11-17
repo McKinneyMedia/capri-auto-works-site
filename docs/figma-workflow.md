@@ -94,7 +94,7 @@ What changed:
 - One `index.html` with inline CSS and JS. `assets/site.css`, `assets/tokens.css`, `assets/site.js`, the Inter fonts, icons and exported images were removed. They remain in Git history.
 - Hero with a garage-door reveal and a live open/closed status computed in America/New_York.
 - "What's going on?" triage chips, a decoder for 8 dashboard warning lights, and a PA inspection sticker checker. The checker assumes a 3-month early-inspection window; confirm against PennDOT guidance.
-- The Google Map loads only after a click. Fonts are self-hosted woff2 files, and the logo is WebP. JSON-LD `AutoRepair` data is included.
+- The Google Map is embedded directly and lazy-loaded (it loads as visitors scroll toward it). Fonts are self-hosted woff2 files, and the logo is WebP. JSON-LD `AutoRepair` data is included.
 - The FormSubmit form keeps the approved recipient (capriautoworks@gmail.com) and adds a honeypot field.
 
 Editorial checks for this release:

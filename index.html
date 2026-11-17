@@ -6,7 +6,7 @@
 <title>Capri Auto Works | Auto Repair, PA Inspection &amp; Used Cars in Allentown, PA</title>
 <meta name="description" content="Walk-in auto repair, PA state inspections, emissions testing and used cars at 2005 Hanover Ave, Allentown, PA. No appointment needed. Call (484) 903-7452.">
 <link rel="canonical" href="https://www.capriautoworks.online/">
-<meta name="build-version" content="2026-11-17-v10">
+<meta name="build-version" content="2026-11-17-v10.1">
 <meta name="theme-color" content="#121519">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Capri Auto Works, Allentown PA">
@@ -286,18 +286,6 @@ footer{padding:64px 0 120px;border-top:1px solid var(--line);color:var(--steel);
 @media (max-width:860px){.cluster{grid-template-columns:1fr}.readout{border-left:0;border-top:1px solid #232933;padding:22px 0 0;min-height:0}}
 @media (max-width:420px){.lights{gap:8px}.light{border-radius:14px}}
 
-/* map facade */
-.map{position:relative}
-.map-face{position:absolute;inset:0;display:grid;place-items:end start;padding:22px;border:0;cursor:pointer;color:var(--paper);text-align:left;font:inherit;
-  background:
-    radial-gradient(circle at 55% 45%, rgba(37,99,235,.35), transparent 22%),
-    linear-gradient(28deg, transparent 49.4%, #39404C 49.4% 50.6%, transparent 50.6%),
-    linear-gradient(-62deg, transparent 49.6%, #39404C 49.6% 50.4%, transparent 50.4%),
-    repeating-linear-gradient(0deg, transparent 0 58px, #232831 58px 60px),
-    repeating-linear-gradient(90deg, transparent 0 74px, #232831 74px 76px), #191D23}
-.map-face .pin{position:absolute;left:55%;top:45%;translate:-50% -100%;width:34px;height:34px;border-radius:50% 50% 50% 0;rotate:-45deg;background:var(--capri);box-shadow:0 8px 20px rgba(0,0,0,.5)}
-.map-face .pin::after{content:"";position:absolute;inset:11px;border-radius:50%;background:#fff}
-.map-face span.btn{pointer-events:none}
 </style>
 </head>
 <body>
@@ -459,7 +447,7 @@ footer{padding:64px 0 120px;border-top:1px solid var(--line);color:var(--steel);
       <p class="muted" style="margin-bottom:8px">Drivers come in from across the Lehigh Valley:</p>
       <ul class="towns"><li>Allentown</li><li>Bethlehem</li><li>Easton</li><li>Whitehall</li><li>Emmaus</li><li>Catasauqua</li></ul>
     </div>
-    <div class="map"><button class="map-face" id="map-face" type="button" aria-label="Load interactive map of 2005 Hanover Ave"><span class="pin" aria-hidden="true"></span><span class="btn btn-primary">Show interactive map</span></button></div>
+    <div class="map"><iframe title="Map to Capri Auto Works, 2005 Hanover Ave, Allentown" src="https://maps.google.com/maps?q=Capri%20Auto%20Works%2C%202005%20Hanover%20Ave%2C%20Allentown%2C%20PA%2018109&amp;z=15&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div>
   </div>
 </section>
 
@@ -655,15 +643,6 @@ footer{padding:64px 0 120px;border-top:1px solid var(--line);color:var(--steel);
   }, {passive:true});
   hero.addEventListener('pointerleave', () => hero.classList.remove('lit'));
 
-  // Map loads only when asked
-  const face = document.getElementById('map-face');
-  face.addEventListener('click', () => {
-    const f = document.createElement('iframe');
-    f.title = 'Map to Capri Auto Works, 2005 Hanover Ave, Allentown';
-    f.src = 'https://maps.google.com/maps?q=Capri%20Auto%20Works%2C%202005%20Hanover%20Ave%2C%20Allentown%2C%20PA%2018109&z=15&output=embed';
-    f.referrerPolicy = 'no-referrer-when-downgrade';
-    face.replaceWith(f);
-  });
 
   // Sticker checker
   const MONTHS = ['January','February','March','April','May','June','July','August','September','October','November','December'];
