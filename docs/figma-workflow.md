@@ -117,3 +117,10 @@ Before this release, Lighthouse on a temporary deploy scored 100 in all four cat
 - No review or rating markup. Google does not show review stars for businesses marking up their own reviews.
 - `llms.txt` gives AI answer engines a plain-text summary of the business. Keep its hours and services in step with the page.
 - `robots.txt` already allows all crawlers. The sitemap now has a `lastmod`.
+
+## v10.5 Web Analytics — November 17, 2026
+
+- Vercel Web Analytics is enabled on the free Hobby tier: 50,000 events a month, 30 days of history, and no custom events. It's cookieless, so the site needs no consent banner.
+- The script loads from `/_vercel/insights/script.js`, which Vercel serves only on deployments.
+- Because history only lasts 30 days, each monthly report must be pulled before its data ages out.
+- Call, direction and form-send taps aren't tracked, because custom events require Vercel Pro.
