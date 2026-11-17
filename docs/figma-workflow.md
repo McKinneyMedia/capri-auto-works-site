@@ -106,3 +106,14 @@ Editorial checks for this release:
 - The review figure will drift over time, so recheck it periodically.
 
 Before this release, Lighthouse on a temporary deploy scored 100 in all four categories on desktop, and on mobile scored 99 for Performance and 100 for the other three.
+
+## v10.3 social share, favicon, SEO and AEO — November 17, 2026
+
+- Social share image: `assets/og-image.jpg` (1200×630, supplied by Carter). Open Graph and Twitter card tags include size and alt text.
+- Icons: `favicon.ico` (16/32/48), a 32px PNG, a 180px Apple touch icon, and 192/512 manifest icons. All are cropped from the logo's "C".
+- Structured data: one JSON-LD `@graph` with WebSite, WebPage, AutoRepair and FAQPage.
+  - AutoRepair adds a description, image, Google Maps link (CID 8282412669277652845), City-typed service areas and a service catalog.
+  - FAQPage is generated from the five visible FAQ answers. If you edit an FAQ, update the JSON-LD to match.
+- No review or rating markup. Google does not show review stars for businesses marking up their own reviews.
+- `llms.txt` gives AI answer engines a plain-text summary of the business. Keep its hours and services in step with the page.
+- `robots.txt` already allows all crawlers. The sitemap now has a `lastmod`.
